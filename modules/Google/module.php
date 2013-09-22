@@ -253,7 +253,7 @@ class Google extends GroupModule {
                     
                     if(!$error){
                         // is it really google
-                        if(strstr($data, "window.google=") === FALSE){
+                        if(strstr($data, "window.google =") === FALSE){
                             $this->w("Not a valid google SERP");
 //                            file_put_contents("/tmp/noserp_". sha1("".time().rand(0, 10000)), $data);
                             $error=true;
